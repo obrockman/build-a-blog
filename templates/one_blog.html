@@ -1,0 +1,15 @@
+{% extends "base.html" %} 
+
+{% block content %} 
+<body>
+        <h1>/blog posts/</h1>
+        <form method="post">
+                    <div class="blog">
+                        <div class="blog-title">{{blog.title}}</div> 
+                        <pre class="blog-body"> {{blog.blog}}</pre>
+                    </div>
+        </form> 
+</body>
+{% endblock %}
+
+<!--<div class="blog-title" href="/blog/{{ blog.key().id()}}">{{blog.title}}</a> -->
